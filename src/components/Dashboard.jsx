@@ -19,11 +19,7 @@ const Dashboard = () => {
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
-  useEffect(() => {
-    if (refToken === undefined) {
-      history("/login");
-    }
-  }, []); 
+
   
   return (
         <div className='flex  '>
@@ -51,7 +47,7 @@ const Dashboard = () => {
                 </div>
                     <p className='font-semibold text-3xl mb-5 lmobile:ml-10 mt-3 lmobile:mt-0 md:ml-5 lmobile:block flex lmobile:justify-center'>Welcome, User</p>
                     <h1 className="text-lg lmobile:text-xl sm:text-2xl font-semibold lmobile:font-bold mb-4 lmobile:ml-12 ml-2 md:ml-5 lmobile:block flex lmobile:justify-center">Investment Opportunities</h1>
-                    <div className="flex lmobile:justify-center  lmobile:ml-5 sm:ml-0 md:justify-evenly flex-wrap gap-5">
+                    <div className="flex ml-5 lmobile:justify-center  lmobile:ml-5 sm:ml-0 md:justify-evenly flex-wrap gap-5">
                       {investmentData.map((investment, index) => (
                         <Link to={`/investment/${investment.id}`} key={index}>
                           <InvestmentCard investment={investment} />
