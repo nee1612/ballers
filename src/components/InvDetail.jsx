@@ -15,7 +15,7 @@ function InvestmentDetailPage() {
   }
   const handleGoBack=()=>{
     console.log ("sdfa")
-        history('/dashboard');
+        history('/');
   }
  
   return (
