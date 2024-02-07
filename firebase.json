@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "xballers",
+    "public": "build",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

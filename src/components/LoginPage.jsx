@@ -74,17 +74,6 @@ function Login() {
             <div className=" w-[70vw] sm:w-[60vw] md:w-[35vw]  lg:w-[30vw]   ">
               <form  onSubmit={signIn} className=''>
                  <div className=" space-y-3  md:space-y-2 lg:space-y-5 mt-3 md:mt-0">
-                  {/* <div className='login font-extrabold text-xl xl:text-3xl py-0 xl:py-4 text-center lmobile:hidden xl:block  text-black' >
-                  
-                  <Typewriter
-                  words={["Connect. Chat. Create."]}
-                  loop
-                  cursor
-                  typeSpeed={120}
-                  deleteSpeed={70}
-                  delaySpeed={1000}
-                />
-                  </div> */}
                  <h2 className=" text-[2rem] md:text-3xl font-bold  text-[#5F0F40] ">
                     Sign in
                   </h2>
